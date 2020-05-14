@@ -10,7 +10,7 @@ const prisonChart = chartFactory({
     transitionSpeed: 500,
   });
   
-  prisonChart.resolveData = async function resolveData() {
+  prisonChart.resolveData = async () => { 
     return csvParse(await (await fetch('assets/uk_prison_data_1900-2015.csv')).text());
   };
   

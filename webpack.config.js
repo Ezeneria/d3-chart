@@ -28,10 +28,6 @@ module.exports = {
                 }
             },
             {
-                test: /\.json$/,
-                loader: 'json-loader',
-            },
-            {
                 test: /\.html$/,
                 loader: 'html-loader',
             },
